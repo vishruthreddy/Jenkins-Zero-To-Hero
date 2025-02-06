@@ -8,15 +8,5 @@ pipeline {
         sh 'node --version'
       }
     }
-    stage('Hello World') {
-      steps {
-        script {
-          writeFile file: 'hello.js', text: '''
-            console.log("Hello, World from Node.js!");
-          '''
-          sh 'node hello.js'
-        }
-      }
-    }
   }
 }
