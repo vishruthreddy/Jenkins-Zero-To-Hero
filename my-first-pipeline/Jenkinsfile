@@ -8,10 +8,10 @@ pipeline {
         sh 'node --version'
       }
     }
-   stage('Hello World') {
+   stage('Hello Worl') {
       steps {
         sh '''
-        echo "console.log('Hello, World!');" > hello.js
+        echo "console.log('Hello, Worl!');" > hello.js
         node hello.js
         '''
       }
